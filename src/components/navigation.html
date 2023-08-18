@@ -1,0 +1,24 @@
+<nav class="header-navbar">
+    <div class="nav-left">
+        <div class="nav-logo">
+            <include src="components/logo.html">
+            </include>
+        </div>
+    </div>
+    <div class="nav-middle">
+        <ul class="nav-item">
+            <include src="components/nav-list.html" locals='{
+            "classList": "nav-items ",
+            "classLink": "nav-link",
+            "list": "[`History`, `Menu`, `Trim`, `Map`]"
+          }'>
+            </include>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <div class="nav-item">
+            <include src="components/shopping-card.html">
+            </include>
+        </div>
+    </div>
+</nav>

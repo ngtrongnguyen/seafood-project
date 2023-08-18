@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+
+.header {
+    .main-heading-sec {
+        background-color: aliceblue;
+        @include bg-img("/src/assets/images/main/hero_section/Image_Cover.png");
+
+        .header-title {
+            margin-top: 6rem;
+            width: 100%;
+            padding: 0 2rem;
+            padding-bottom: 24rem;
+
+            @include mobile {
+                padding: 0 0 24rem;
+
+                h1 {
+                    font-size: 39px;
+                    font-weight: 300;
+                    line-height: 47px;
+                    text-align: left;
+                }
+            }
+
+            @include tablet {
+                gap: 0.5rem;
+            }
+
+            p {
+                font-family: $Second-font;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                width: 20%;
+                margin-left: 2rem;
+
+                @include mobile {
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 12px;
+                    width: 58%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

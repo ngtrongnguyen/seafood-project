@@ -1,0 +1,33 @@
+@use '../abstracts/' as *;
+.callto-section{
+    .callto-total{
+        width: 100%;
+        .row-one{
+            width: 100%;
+            
+            h2{
+                width: 100%;
+                display: inline-block;
+                img{
+                    width: auto;
+                    @include mobile {
+                            display: none;
+                        }
+                }
+            }
+        }
+        .call-to-btn{
+            text-align: center;
+            margin: 2rem 0;
+            button {
+                    background-color: $button-color;
+                    color: $text-color-second;
+                    padding: 0.5rem 3rem;
+                    border: 1px solid $button-color;
+                    @include mobile {
+                            padding: 1rem 4rem;
+                        }
+                }
+        }
+    }
+}

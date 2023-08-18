@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+@forward "./nav";
+@forward "./about-section";
+@forward "./menu-section";
+@forward "./gallery-section";
+@forward "./call-to-section";
+@forward "./shopping-cart";
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 50px;
+    @include flex($direction: column, $align: flex-start);
+    
+
+    @include tablet {
+        max-width: 720px;
+    }
+
+    @include mobile {
+        padding: 0 15px;
+        max-width: inherit;
+    }
+
+    // @include desktop {
+    //     padding: 0 30px;
+    // }
+}

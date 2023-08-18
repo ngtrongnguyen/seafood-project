@@ -1,0 +1,75 @@
+@use '../abstracts/' as *;
+
+.header-navbar {
+    @include flex($direction: row, $justify: space-between, $align: center);
+    position: fixed;
+    width: 100%;
+    padding: 1rem 1rem;
+
+    .nav-left {
+        .nav-logo {
+            @include flex($direction: row, $justify: space-around, $align: center);
+            gap: 2px;
+
+            img {
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            p {
+                @include mobile {
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 22px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .nav-middle {
+        @include mobile {
+            display: none;
+        }
+
+        .nav-items {
+            display: inline-block;
+        }
+    }
+
+    .nav-right {
+        @include mobile {
+            display: none;
+        }
+
+        .nav-item {
+            // .shopping-cart{
+            //     background-color: $background-color-shopping;
+            //     padding: 0.5rem 2rem;
+            //     .vector{
+            //         background-color: $background-color;
+            //         border-radius: 50%;
+            //         width: 1rem;
+            //         height: 1rem;
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: center;
+            //         margin-top: -1rem;
+            //         transform: translateX(6.8rem);
+            //         p{
+            //             margin: auto;
+            //             color: black;
+            //             font-family: Apercu Pro;
+            //             font-size: 9px;
+            //             font-weight: 400;
+            //             line-height: 9px;
+            //             letter-spacing: 0em;
+            //             text-align: center;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
